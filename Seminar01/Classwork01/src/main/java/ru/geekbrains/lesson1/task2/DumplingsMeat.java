@@ -8,12 +8,12 @@ public class DumplingsMeat implements SemiFinishedFood{
 
     @Override
     public boolean getProteins() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean getFats() {
-        return true;
+        return false;
     }
 
     @Override

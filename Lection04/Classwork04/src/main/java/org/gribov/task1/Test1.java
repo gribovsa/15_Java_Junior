@@ -1,15 +1,15 @@
-package org.gribov;
+package org.gribov.task1;
 
 import java.sql.*;
 
 /**todo
- * JDBC (Java Database Connectivity) — это программный интерфейс,
- * предоставляющий набор классов и методов для взаимодействия с базами данных
- * из языка программирования Java.
+ *  JDBC (Java Database Connectivity)
+ *  — это программный интерфейс, предоставляющий набор классов и методов для
+ *  взаимодействия с базами данных из языка программирования Java.
  */
 
-public class Task1 {
-    private static final String url = "jdbc:mysql://10.1.11.72:3306";
+public class Test1 {
+    private static final String url = "jdbc:mysql://localhost:3306";
     private static final String user = "gribov";
     private static final String password = "1234";
 

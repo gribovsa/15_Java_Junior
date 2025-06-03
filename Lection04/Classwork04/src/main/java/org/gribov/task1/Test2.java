@@ -19,7 +19,7 @@ public class Test2 {
         Statement statement = connection.createStatement();
 
         //заполняем БД
-        statement.execute("DROP SCHEMA `test` ;");
+        //statement.execute("DROP SCHEMA `test` ;");
         statement.execute("CREATE SCHEMA `test` ;");
         statement.execute("CREATE TABLE `test`.`table` (\n" +
                 " `id` INT NOT NULL,\n" +

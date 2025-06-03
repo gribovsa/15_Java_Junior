@@ -55,7 +55,7 @@ public class Magic {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idmagic;
+    private int id;
 
     /**
      * Аннотация @Column привязывает поле к колонке в базе данных. Если
@@ -67,7 +67,8 @@ public class Magic {
     private int damage;
     @Column(name = "атака")
     private int attBonus;
-
+    @Column(name = "броня")
+    private int def;
 
     /**
      * Конструктор с ключами
@@ -75,14 +76,15 @@ public class Magic {
      * @param damage повреждение
      * @param attBonus атака
      */
-    public Magic(String name, int damage, int attBonus) {
+    public Magic(String name, int damage, int attBonus, int def) {
         this.name = name;
         this.damage = damage;
         this.attBonus = attBonus;
+        this.def = def;
     }
 
     /**
-     * Конструктор пустой
+     * Конструктор пустой - это правило работы с ORM
      */
     public Magic() {
     }
@@ -92,7 +94,7 @@ public class Magic {
      * Геттеры
      */
     public int getIdMagic() {
-        return idmagic;
+        return id;
     }
 
     public String getName() {
@@ -107,6 +109,9 @@ public class Magic {
         return attBonus;
     }
 
+    public int getDef() {
+        return def;
+    }
 
     /**
      * Сеттеры
@@ -121,5 +126,20 @@ public class Magic {
 
     public void setAttBonus(int attBonus) {
         this.attBonus = attBonus;
+    }
+
+    public void setDef(int def) {
+        this.def = def;
+    }
+
+    @Override
+    public String toString() {
+        return "Magic{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", damage=" + damage +
+                ", attBonus=" + attBonus +
+                ", def=" + def +
+                '}';
     }
 }

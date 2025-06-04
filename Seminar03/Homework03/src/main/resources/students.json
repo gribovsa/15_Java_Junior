@@ -1,0 +1,21 @@
+[ {
+  "name" : "Иванов",
+  "age" : 24,
+  "gpa" : 4.5,
+  "done" : false
+}, {
+  "name" : "Петров",
+  "age" : 18,
+  "gpa" : 5.0,
+  "done" : false
+}, {
+  "name" : "Сидоров",
+  "age" : 19,
+  "gpa" : 4.9,
+  "done" : true
+}, {
+  "name" : "Грибов",
+  "age" : 44,
+  "gpa" : 4.0,
+  "done" : false
+} ]

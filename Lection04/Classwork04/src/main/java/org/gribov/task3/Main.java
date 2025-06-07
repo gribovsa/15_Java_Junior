@@ -15,7 +15,7 @@ package org.gribov.task3;
  */
 public class Main {
     public static void main(String[] args) {
-        //Db.createDB(); //заполнить БД
+        Db.createDB(); //заполнить БД
         Db.readDB(); //прочитать БД
         //Db.updateBD(); //изменить БД
         //Db.deleteBD(); //удалить из БД

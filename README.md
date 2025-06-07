@@ -26,5 +26,20 @@
 - Использование Reflection API для работы с приватными полями и методами.
 
 
-## Урок 3.
-## Урок 4.
+## Урок 3. Сериализация
+- Интерфейс Serializable
+  * используя ObjectInputStream в сочетании с FileInputStream
+- Служебный интерфейс Externalizable для кастомной сериализации
+  * методы  writeExternal readExternal
+- Использование Framework Jackson, сериализация в файлы json, xml
+
+
+## Урок 4. Базы данных и инструменты взаимодействия с ними
+- JDBC (Java Database Connectivity) - драйвера сервера базы данных
+- (ORM) Object-Relational Mapping. библиотека Hibernate.
+- На семинаре показан пример работы с Docker Desktop, плагином Docker IntelliJ IDEA
+  созданием двух контейнеров с MySQL и java приложением.
+  Плагин скачать не смог!
+
+
+## Урок 5. Урок 5. Клиент/Сервер своими руками
